@@ -1,6 +1,7 @@
 import P5 from "p5";
 import React from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
+import { painting } from "./painting";
 
 function sketch(p5: P5) {
   p5.setup = () => p5.createCanvas(600, 400, p5.WEBGL);
@@ -18,5 +19,5 @@ function sketch(p5: P5) {
 }
 
 export default function App() {
-  return <ReactP5Wrapper sketch={sketch} />;
+  return <ReactP5Wrapper sketch={painting} />;
 }
