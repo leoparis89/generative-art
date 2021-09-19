@@ -1,7 +1,8 @@
 import React from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
+import P5 from "p5";
 
-function sketch(p5: any) {
+function sketch(p5: P5) {
   p5.setup = () => p5.createCanvas(600, 400, p5.WEBGL);
 
   p5.draw = () => {
